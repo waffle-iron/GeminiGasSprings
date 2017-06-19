@@ -1,0 +1,634 @@
+body {
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+#overlay {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; /*opacity: 0.5;     filter: alpha(opacity=50);*/
+}
+
+#loading {
+    width: 50px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
+
+#wizard {
+    margin: auto;
+    width: 900px;
+    z-index: 2;
+}
+
+#configurator {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    width: 900px;
+    height: auto;
+    border: black solid 1px;
+    margin: auto;
+    z-index: 3;
+}
+
+#stepHeader {
+    padding-bottom: 5px;
+    height: 41px;
+}
+
+#stepId {
+    font-weight: bold;
+}
+
+#products {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+    #products .ui-selecting {
+        background: lightblue;
+    }
+
+    #products .ui-selected {
+        background: gray;
+        color: white;
+    }
+
+    #products li {
+        border: transparent solid 1px;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding-left: 15px;
+        vertical-align: middle;
+    }
+
+        #products li span {
+            font-size: 14;
+            font-weight: bold;
+            display: inline-block;
+            padding-left: 30px;
+            padding-top: 15px;
+            vertical-align: top;
+        }
+
+        #products li:hover {
+            border: black solid 1px;
+            border-radius: 10px;
+            background: lightgray;
+            cursor: pointer;
+        }
+
+.selector {
+    border: cyan solid 2px;
+    padding: 3px;
+}
+
+.selectorDisabled {
+    border: gray solid 1px;
+    padding: 3px;
+    background-color: white;
+    z-index: 20;
+}
+
+.enabledOption {
+    font-weight: bold !important;
+}
+
+
+#wizardFooter {
+    display: none;
+    height: 225px;
+    margin: 0px;
+    padding: 5px;
+    border-top: black solid 1px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+    #wizardFooter table {
+        width: 100%;
+    }
+
+.wizardFooterTitle {
+    width: 20%;
+}
+
+.wizardFooterValue {
+    width: 20%;
+}
+
+.footerHeader {
+    font-weight: bold;
+}
+
+.wizardFooterEqual {
+    width: 10px;
+}
+
+.qtyInput {
+    width: 40px !important;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sendOfferInput {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 3px;
+    width: 200px;
+}
+
+#wizardBody {
+    position: relative;
+    display: none;
+    height: 370px;
+    z-index: 4;
+}
+
+    #wizardBody canvas {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+#springImage {
+    display: none;
+    margin-left: auto;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    text-align: center;
+}
+
+#previousStepTip {
+    position: absolute;
+    bottom: 60px;
+    margin-left: auto;
+    left: 250px;
+    display: none;
+}
+
+#btnPreviousStep {
+    position: absolute;
+    bottom: 10px;
+    margin-left: auto;
+    left: 250px;
+    width: 40px;
+    height: 40px;
+    background-image: url('back.png');
+    background-size: 40px 40px;
+}
+
+    #btnPreviousStep:hover {
+        background-image: url('back-highlight.png');
+        background-size: 40px 40px;
+    }
+
+.bubble {
+    position: relative;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 0 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0 3px rgba(0,0,0,1);
+    box-shadow: 0px 0 3px rgba(0,0,0,1);
+}
+
+    .bubble:after {
+        position: absolute;
+        display: block;
+        content: "";
+        border-color: black transparent transparent transparent;
+        border-style: solid;
+        border-width: 10px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        bottom: -19px;
+        left: 1em;
+    }
+
+#cmbForces {
+    width: 110px;
+    z-index: 10;
+    position: absolute;
+}
+
+#selectRodTube {
+    /*text-align: right;*/
+    width: 250px;
+}
+
+.endFitting {
+    border: transparent solid 1px;
+    border-radius: 10px;
+    width: 150px;
+    padding-left: 5px;
+}
+
+    .endFitting:hover {
+        border: gray solid 1px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.6);
+        cursor: pointer;
+    }
+
+    .endFitting img {
+        width: 40px;
+        height: 40px;
+    }
+
+.scrollableEndFitting {
+    border: transparent solid 1px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+    .scrollableEndFitting:hover {
+        border: gray solid 1px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.6);
+        cursor: pointer;
+    }
+
+
+
+.broderlessCell {
+    border-top: transparent solid 1px !important;
+    border-left: transparent solid 1px !important;
+    border-bottom: transparent solid 1px !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    width: 20px;
+}
+
+.text {
+    display: inline-block;
+    text-align: center;
+}
+
+.container {
+    height: 320px;
+    width: 120px;
+    overflow: auto;
+}
+
+    .container a, input {
+        vertical-align: middle;
+    }
+
+.noneOption {
+    padding: 15px;
+    border: transparent solid 1px;
+    border-radius: 10px;
+}
+
+    .noneOption span {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .noneOption:hover {
+        border: gray solid 1px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.6);
+        cursor: pointer;
+    }
+
+
+.container img {
+    border: none;
+    vertical-align: middle;
+}
+
+.footerValueWithPrice {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .footerValueWithPrice img {
+        background-image: url('Info_logo_25px.png');
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        border: none;
+        margin: 0px;
+        vertical-align: top;
+    }
+
+    .footerValueWithPrice span {
+        padding-right: 10px;
+        margin: 0px;
+        vertical-align: top;
+    }
+
+    .footerValueWithPrice input {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        font-size: 12px;
+        padding: 1px 8px;
+        margin: 0px;
+        vertical-align: top;
+    }
+
+.basketCell {
+    width: 80px;
+    background: url('Putinbasket_button_2_100x100.png') no-repeat center center;
+    border-radius: 10px;
+    width: 900px;
+    height: auto;
+    border: green solid 1px;
+    margin: auto;
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 50px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .basketCell:hover {
+        background-color: rgba(0,128,0,0.6);
+        color: white;
+    }
+
+.lengthBox {
+    position: absolute;
+    text-align: center;
+    border: black solid 1px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#footerButtons {
+    display: none;
+    padding-top: 10px;
+}
+
+    #footerButtons input {
+        float: left;
+    }
+
+#sendEmailForm {
+    float: left;
+    display: none;
+}
+
+#sendOfferForm {
+    float: left;
+    display: none;
+    width: 100%;
+}
+
+#emailFormLeft {
+    width: 50%;
+    float: left;
+}
+
+#sendOfferFormLeft {
+    width: 50%;
+    float: left;
+}
+
+#sendOfferFormRight {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+}
+
+#sendOfferFormLeft input {
+    margin: 0;
+}
+
+#sendOfferTilte {
+    margin: 0px;
+    text-align: center;
+}
+
+#emailFormRight {
+    width: 45%;
+    padding-left: 20px;
+    float: left;
+}
+
+
+#emailFormLeft div {
+    padding: 5px;
+}
+
+#emailFormLeft span {
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#emailFormLeft label {
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#emailFormButtons input {
+    float: left;
+}
+
+#emailFormLeft textarea {
+    width: 100%;
+}
+
+
+.lockingTubeButton {
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 95%;
+    margin: 5px 0;
+    border: solid 1px black;
+}
+
+    .lockingTubeButton:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+#btnCancelSendOffer {
+    float: left;
+}
+
+@media screen {
+    .noPrint {
+    }
+
+    .noScreen {
+        display: none;
+    }
+}
+
+@media print {
+
+    .noPrint {
+        display: none;
+    }
+
+    .noScreen {
+        display: block;
+    }
+
+    .footerValueWithPrice input {
+        display: none;
+    }
+
+    #gasSpringHeader {
+        display: none;
+    }
+
+    #stepHeader {
+        display: none;
+    }
+
+    #wizard {
+        margin-top: 100px;
+        z-index: 2;
+    }
+
+    #configurator {
+        border: none;
+    }
+
+    .basketCell {
+        display: none;
+        border: none;
+    }
+
+    #addToBasket {
+        display: none;
+    }
+
+    #footerButtons {
+        display: none;
+    }
+
+    #btnDownload {
+        display: none;
+    }
+
+    #btnEmailData {
+        display: none;
+    }
+
+    #btnPrintData {
+        display: none;
+    }
+}
+
+/* tables */
+
+#table-wrapper {
+    position: relative;
+}
+
+#table-scroll {
+    width: 190px;
+}
+
+table.tablesorter {
+    font-family: arial;
+    margin: 10px 0pt 15px;
+    font-size: 8pt;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+    table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+        background-color: #e6EEEE;
+        border: 1px solid black;
+        font-size: 8pt;
+    }
+
+    table.tablesorter thead tr {
+        display: block;
+        position: relative;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    table.tablesorter tbody {
+        display: block;
+        overflow: auto;
+        width: 100%;
+        height: 120px;
+    }
+
+    table.tablesorter thead tr .header {
+        background-image: url(bg.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+    }
+
+    table.tablesorter tbody tr {
+        height: 18px;
+    }
+
+    table.tablesorter tbody td {
+        color: #3D3D3D;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background-color: #FFF;
+        vertical-align: top;
+        width: 40px;
+    }
+
+    table.tablesorter tbody tr.odd td {
+        background-color: #F0F0F6;
+    }
+
+    table.tablesorter thead tr .headerSortUp {
+        background-image: url(asc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown {
+        background-image: url(desc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: #8dbdd8;
+    }
+
+    table.tablesorter th {
+        border-collapse: collapse;
+        text-align: center;
+        border: black solid 1px;
+        width: 40px;
+    }
+
+    table.tablesorter td {
+        border-collapse: collapse;
+        text-align: center;
+        border: black solid 1px;
+    }
