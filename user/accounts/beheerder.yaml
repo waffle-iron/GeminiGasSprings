@@ -1,0 +1,11 @@
+email: ron@moerman.cc
+fullname: Beheerder
+title: Beheerder
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$boj9EycKb.Xk6rzVHO1obOBqzQyjEoh2PN6bis27xZEqrF1O0677e
