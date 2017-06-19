@@ -1,7 +1,82 @@
-title: Grav
+title: 'Gemini Gas Springs'
+default_lang: en
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'Gemini Gas Springs'
+  email: info@geminigassprings.com
+  copyright: 'Copyright 2017 Gemini Gas Springs Inc. All Rights Reserved.'
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+  description: 'My Deliver Site'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+routes:
+  /something/else: /blog/sample-3
+  /another/one/here: /blog/sample-3
+  '/new/*': '/blog/*'
+blog:
+  route: /blog
+contact:
+  address:
+    -
+      line: '6276 Pleasant Valley Road'
+    -
+      line: 'Vernon, British Columbia'
+    -
+      line: 'V1T 6N2, Canada'
+  gps: 1.306.222.3456
+othermenu:
+  -
+    text: About
+    url: about
+  -
+    text: 'Privacy Policy'
+    url: '#'
+  -
+    text: Contact
+    url: contact
+quicklinks:
+  -
+    text: About
+    url: 'base_url:about'
+  -
+    text: Products
+    url: 'base_url:products'
+  -
+    text: Inquiries
+    url: 'base_url:inquiries'
+  -
+    text: 'Contact Us'
+    url: 'base_url:contact'
+header_options:
+  arrows: 'true'
+  autoslide: 'false'
+  autoslideHoverStop: 'false'
+  interval: '2000'
+  loop: 'false'
+  transition: zoom
+  itemsForSlide: '0'
+  touch: 'true'
+  swipe: 'true'
+footer:
+  description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.'
+  contact_title: 'Contact Info'
+  links_title: 'Quick Links'
+  newsletter_title: Newsletter
+  newsletter_description: 'Etiam porta sem malesuada magna mollis euismod.'
+  copyright_text: 'Copyright 2013 Deliver. All Rights Reserved.'
+  feedburner: ''
+social:
+  -
+    url: 'https://twitter.com/getgrav'
+    icon: twitter
+  -
+    url: '#'
+    icon: facebook
+  -
+    url: blog.rss
+    icon: rss

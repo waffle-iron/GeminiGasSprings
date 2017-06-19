@@ -1,0 +1,9 @@
+{% include 'partials/base.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+
+{% block content %}
+	<p>{{ page.content }}</p>
+{% endblock %}
+
+{% include 'partials/configurator.html.twig' %}

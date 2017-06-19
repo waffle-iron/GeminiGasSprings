@@ -48,9 +48,6 @@
         <header id="header">
                 <div class="logo">
                     <h3><a href="{{ base_url_absolute }}">{{ config.site.title }}</a></h3>
-                    {% block social %}
-                        {% include 'partials/social.html.twig' %}
-                    {% endblock %}
                 </div>
                 <div id="navbar">
                     {% block header_extra %}{% endblock %}

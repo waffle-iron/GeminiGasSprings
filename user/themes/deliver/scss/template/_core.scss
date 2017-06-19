@@ -10,9 +10,9 @@ body {
 }
 
 a {
-	color: $core-accent;
+	color: $header-text;
 	&:hover {
-		color: darken($core-accent, 20%);
+		color: darken($header-text, 20%);
 	}
 }
 

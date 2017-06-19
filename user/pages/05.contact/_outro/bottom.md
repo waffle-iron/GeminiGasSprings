@@ -1,10 +1,13 @@
 ---
-title: If you like what you see, Join us
+title: Do you need a theme
 buttons:
-    - text: CONTACT US
-      url: 
-      primary: true
+    - text: LEARN
+      url: http://learn.getgrav.org
+      primary: true  
 ---
-## If you like what you see, Contact us !
+
+___
+
+## Do you need a theme ?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.

@@ -3,9 +3,6 @@
         <div class="footer-module large">
             <div class="logo">
                 <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-                {% block social %}
-                    {% include 'partials/social.html.twig' %}
-                {% endblock %}
 
             </div>
             {% if site.footer.description %}
@@ -19,7 +16,6 @@
                 {% endfor %}
             </p>
             <p>{{ site.author.email }}</p>
-            <p><strong>{{ site.contact.gps }}</strong></p>
         </div>
         <div class="footer-module"><h4>{{ site.footer.links_title }}</h4>
          <ul class="quickmenu">

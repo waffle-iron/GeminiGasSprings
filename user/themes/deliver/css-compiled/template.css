@@ -25,9 +25,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #87b672; }
+  color: #19396b; }
   a:hover {
-    color: #558042; }
+    color: #060d18; }
 
 b, strong, label, th {
   font-weight: 600; }
@@ -1619,7 +1619,7 @@ ul.pagination {
     margin: 0;
     float: left; }
     .logo h3 a {
-      color: #9A9898; }
+      color: #19396b; }
   .logo h4, .logo .archive-list label, .archive-list .logo label, .logo .modular .bottom table th, .modular .bottom table .logo th, .logo .contact label, .contact .logo label, .logo .callout .pricing-container .pricing-item .name, .callout .pricing-container .pricing-item .logo .name, .logo .callout .pricing-container .pricing-item .foot .button, .callout .pricing-container .pricing-item .foot .logo .button, .logo .callout .pricing-container .pricing-item .foot .archive-list button, .callout .pricing-container .pricing-item .foot .archive-list .logo button, .logo .archive-list .callout .pricing-container .pricing-item .foot button, .archive-list .callout .pricing-container .pricing-item .foot .logo button, .logo .callout .pricing-container .pricing-item .foot .contact button, .callout .pricing-container .pricing-item .foot .contact .logo button, .logo .contact .callout .pricing-container .pricing-item .foot button, .contact .callout .pricing-container .pricing-item .foot .logo button {
     text-align: left; }
   .logo ul {

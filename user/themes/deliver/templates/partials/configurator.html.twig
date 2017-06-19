@@ -1,0 +1,317 @@
+<div id="Content">
+	<div id="wizardContainer">
+		<div class="noScreen" id="logoContainer"><img src="/scripts/HtmlConfigurator/LOGO_2.png"></div>
+		<div id="wizard">
+			<div>
+				<h2 id="gasSpringHeader"></h2>
+			</div>
+			<div id="stepHeader">
+				<span id="stepId"></span><span id="stepDescription"></span>
+			</div>
+			<div id="configurator">
+				<div id="wizardBody">
+					<div id="springImage"></div>
+					<div id="previousStepTip">
+						<div class="bubble"></div>
+					</div><a href="javascript:previousStep()" id="btnPreviousStep"></a>
+				</div>
+				<div id="wizardFooter">
+					<table id="wizardFooterTable">
+						<tr>
+							<td class="footerHeader" colspan="3" id="gasSpring"></td>
+							<td class="footerHeader" colspan="3" id="unitSpecs"></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="pistonRodTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="pistonRodValue"></td>
+							<td class="wizardFooterTitle" id="gasSpringTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="gasSpringValue"></td>
+							<td class="basketCell" rowspan="6"><span id="addToBasket"></span></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="tubeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="tubeFooterValue"></td>
+							<td class="wizardFooterTitle" id="endFitting1FooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="endFitting1FooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="strokeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="strokeFooterValue"></td>
+							<td class="wizardFooterTitle" id="endFitting2FooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="endFitting2FooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="forceFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="forceFooterValue"></td>
+							<td class="wizardFooterTitle" id="braketRodFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="braketRodFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="totalLengthWithoutThreadsFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="totalLengthWithoutThreadsValue"></td>
+							<td class="wizardFooterTitle" id="bracketTubeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="bracketTubeFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="totalLengthWithFittingsFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="totalLengthWithFitingsFooterValue"></td>
+							<td class="wizardFooterTitle" id="extensionFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="extensionFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td class="wizardFooterTitle" id="threadSizeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="threadSizeFooterValue"></td>
+							<td class="wizardFooterTitle" id="lockingTubeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="lockingTubeFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="wizardFooterTitle" id="bellowFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="bellowFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td colspan="4">
+								<div id="footerButtons">
+									<input id="btnDownload" type="button"><input id="btnEmailData" type="button"><input id="btnPrintData" onclick="javascript:window.print();" type="button"><input id="btnSendOffer" type="button">
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table id="wizardFooterWeldedEyesTable">
+						<tr>
+							<td class="footerHeader" colspan="3" id="gasSpring"></td>
+							<td class="footerHeader" colspan="3" id="unitSpecs"></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="pistonRodTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="pistonRodValue"></td>
+							<td class="wizardFooterTitle" id="gasSpringTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="gasSpringValue"></td>
+							<td class="basketCell" rowspan="6"><span id="addToBasket"></span></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="tubeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="tubeFooterValue"></td>
+							<td class="wizardFooterTitle" id="braketRodFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="braketRodFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="strokeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="strokeFooterValue"></td>
+							<td class="wizardFooterTitle" id="bracketTubeFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="bracketTubeFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="forceFooterTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="forceFooterValue"></td>
+							<td class="wizardFooterTitle"></td>
+							<td class="wizardFooterEqual"></td>
+							<td class="wizardFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="totalLengthEyeToEyeTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="totalLengthWithoutThreadsValue"></td>
+							<td class="wizardFooterTitle"></td>
+							<td class="wizardFooterEqual"></td>
+							<td class="wizardFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="wizardFooterTitle" id="welededEyesThinknessTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="welededEyesThinknessValue"></td>
+							<td class="wizardFooterTitle"></td>
+							<td class="wizardFooterEqual"></td>
+							<td class="wizardFooterValue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td class="wizardFooterTitle" id="welededEyesHoleSizeTitle"></td>
+							<td class="wizardFooterEqual">=</td>
+							<td class="wizardFooterValue" id="welededEyesHoleSizeValue"></td>
+							<td colspan="4">
+								<div id="footerButtons">
+									<input id="btnDownload" type="button"><input id="btnEmailData" type="button"><input id="btnPrintData" onclick="javascript:window.print();" type="button"><input id="btnSendOffer" type="button">
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div id="sendEmailForm">
+						<div id="emailFormLeft">
+							<div>
+								<label id="lblEmail"></label><input id="txtEmail" type="text">
+							</div>
+							<div>
+								<label id="lblRecipientName"></label><input id="txtRecipientName" type="text">
+							</div>
+							<div>
+								<span id="titleRecipientMsg"></span>
+								<textarea id="txtRecipientMsg" rows="6"></textarea>
+							</div>
+						</div>
+						<div id="emailFormRight">
+							<p id="emailStepDescription"></p>
+							<div id="emailFormButtons">
+								<input id="btnCancelEmailSend" type="button"><input id="btnSendEmail" type="button">
+							</div>
+						</div>
+					</div>
+					<div id="sendOfferForm">
+						<div id="sendOfferFormLeft">
+							<table id="offerDetailsTable">
+								<tr>
+									<td class="footerHeader" colspan="3" id="unitSpecs_offerTable"></td>
+									<td id="stockLevelTitle"></td>
+									<td id="qtyTitle"></td>
+								</tr>
+								<tr>
+									<td id="gasSpringTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="gasSpringValue_offerTable"></td>
+									<td id="gasSpringPriceButton"></td>
+									<td><input class="qtyInput" id="txtGasSpringQty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="endFitting1FooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="endFitting1FooterValue_offerTable"></td>
+									<td id="endFitting1PriceButton"></td>
+									<td><input class="qtyInput" id="txtEndFitting1Qty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="endFitting2FooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="endFitting2FooterValue_offerTable"></td>
+									<td id="gasEndFitting2PriceButton"></td>
+									<td><input class="qtyInput" id="txtEndFitting2Qty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="braketRodFooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="braketRodFooterValue_offerTable"></td>
+									<td id="bracketRodPriceButton"></td>
+									<td><input class="qtyInput" id="txtBracketRodQty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="bracketTubeFooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="bracketTubeFooterValue_offerTable"></td>
+									<td id="bracketTubePriceButton"></td>
+									<td><input class="qtyInput" id="txtBracketTubeQty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="extensionFooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="extensionFooterValue_offerTable"></td>
+									<td id="extensionPriceButton"></td>
+									<td><input class="qtyInput" id="txtExtensionQty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="lockingTubeFooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="lockingTubeFooterValue_offerTable"></td>
+									<td id="lockingTubePriceButton"></td>
+									<td><input class="qtyInput" id="txtLockingTubeQty" type="text"></td>
+								</tr>
+								<tr>
+									<td id="bellowFooterTitle_offerTable"></td>
+									<td class="wizardFooterEqual">=</td>
+									<td id="bellowFooterValue_offerTable"></td>
+									<td id="bellowPriceButton"></td>
+									<td><input class="qtyInput" id="txtBellowQty" type="text"></td>
+								</tr>
+							</table>
+						</div>
+						<div id="sendOfferFormRight">
+							<h2 id="sendOfferTilte"></h2>
+							<table>
+								<tr>
+									<td id="customerType"></td>
+									<td id="selectCountry"></td>
+								</tr>
+								<tr>
+									<td><select class="sendOfferInput" id="optionCustomerType">
+										<option id="businessCustomer" value="1">
+										</option>
+										<option id="privateCustomer" value="0">
+										</option>
+									</select></td>
+									<td><select class="sendOfferInput" id="optionCountries">
+									</select></td>
+								</tr>
+								<tr>
+									<td id="yourNameTitle"></td>
+									<td id="alternativeNameTitle"></td>
+								</tr>
+								<tr>
+									<td><input class="sendOfferInput" id="txtEmailAddress" required="required" type="email"></td>
+									<td><input class="sendOfferInput" id="txtAlternativeEmailAddress" type="email"></td>
+								</tr>
+								<tr>
+									<td><input class="sendOfferInput" id="txtYourName" required="required" type="text"></td>
+									<td><input class="sendOfferInput" id="txtAlternativeName" type="text"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input id="btnCancelSendOffer" type="button"><input id="btnDoSendOffer" type="button"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id="overlay"></div>
+				</div>
+			</div>
+			<div class="noScreen" id="copyright"></div>
+		</div>
+	</div>
+</div>
