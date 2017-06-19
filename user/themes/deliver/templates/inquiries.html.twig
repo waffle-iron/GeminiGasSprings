@@ -1,4 +1,3 @@
-{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getLanguage ?: 'en' }}">
 <head>
@@ -22,12 +21,6 @@
 {% endblock head%}
 </head>
 <body>
-        {% block body %}
-			{% block content %}
-				<p>{{ page.content }}</p>
-			{% endblock %}
 			{% include 'partials/configurator.html.twig' %}
-
-        {% endblock %}
 </body>
 </html>
