@@ -20,7 +20,7 @@ home:
   alias: /home
   hide_in_urls: false
 pages:
-  theme: deliver
+  theme: x-corporation
   order:
     by: default
     dir: asc

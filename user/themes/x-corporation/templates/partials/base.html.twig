@@ -1,0 +1,45 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE HTML>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+    <head>
+        {% include 'partials/head.html.twig' %}
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div id="preloader">
+                <div id="status">
+                    <div class="status-mes"></div>
+                </div>
+            </div>
+
+            <div class="uc-mobile-menu-pusher">
+                <div class="content-wrapper">
+                    {% include 'partials/navbar.html.twig' %}
+
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+
+            <div class="uc-mobile-menu uc-mobile-menu-effect">
+                <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
+                        id="uc-mobile-menu-close-btn">&times;</button>
+                <div>
+                    <div>
+                        <ul id="menu">
+                        {% for p in pages.children.visible %}
+                            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                            {% if p.children.visible.count == 0 %}
+                                <li class="{{ current_page }}">
+                                    <a href="{{ p.url }}">{{ p.menu }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'partials/footer.html.twig' %}
+    </body>
+</html>
